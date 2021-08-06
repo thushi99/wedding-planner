@@ -1,0 +1,680 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url("backgroundGI.gif");
+    background-color: #000000;
+    color:white ;
+    font-size: 19px;
+    font-family:sans-serif;
+}
+
+header,footer
+{
+    background-image: url("backgroundGIF.gif");
+    background-size: 50%;
+}
+
+header
+{
+    width: 100%;
+}
+
+/*Search Bar*/
+.search
+{
+    float: right;
+    margin-top: 115px;
+    margin-right:10px;
+}
+
+form.search input[type=text]
+{
+    padding: 6px;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    float: left;
+    width: 80%;
+    background: #000000;
+    color: white;
+}
+
+form.search button
+{
+    
+    width: 15%;
+    padding: 6px;
+    background: #000000;
+    color: white;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    border-left: none;
+    cursor: pointer;
+}
+
+/*Navigation Menu Styles*/
+.nav-menu
+{
+    display:block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    text-align: center;
+    width: 100%;
+    height: 65px;
+}
+.nav-menu a
+{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.nav-menu ul
+{
+    list-style: none;
+    display: inline-flex;
+}
+
+.nav-menu ul li
+{
+    width: 150px;
+    margin:10px;
+    padding:10px
+    
+}
+
+.nav-menu ul li a:hover
+{
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255,2, 204), 0 0 10px rgb(255,2, 204);
+    
+    font-size: 20px;
+}
+
+.nav-menu ul li a
+{
+    -webkit-transition: font-size .5s ease;
+    -moz-transition: font-size .5s ease;
+    -o-transition: font-size .5s ease;
+    transition: font-size .5s ease;
+}
+
+.checkbtn
+{
+    float: right;
+    text-align: center;
+    margin:20px;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+@media (max-width: 1000px)
+{
+    .checkbtn
+    {
+        display: block;
+    }
+
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:20px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        margin-left: 37%;
+    }
+
+    .nav-menu ul
+    {
+        margin-top: 133px;
+        display: block;
+    }
+
+    .nav-menu ul li
+    {
+        margin:5px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul
+    {
+        left: 0;
+    }
+}
+
+@media (max-width: 529px)
+{
+    .nav-menu ul
+    {
+        margin-top: 280px;
+        display: block;
+    }
+}
+
+/*Footer Styles*/
+footer
+{
+    width: 100%;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    bottom: 0px;
+}
+
+.main-content
+{
+    display: flex;
+}
+
+.main-content .section
+{
+    flex-basis: 50%;
+    padding:10px 20px;
+}
+
+.main-content a
+{
+    color: rgb(128, 128, 128);
+    text-decoration:none;
+}
+
+footer h3
+{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section .content
+{
+    margin:20px 0 0 0;
+}
+
+footer a:hover
+{
+    text-shadow: 0px 0px 10px #ffffff;
+    color: rgb(126, 214, 255);
+}
+
+/*social media icons*/
+.right .content .social
+{
+    margin:20px 0 0 0;
+}
+
+.right .content .social a 
+{
+    padding:0 10px 0 0;
+}
+
+.right .content .social a div
+{
+    height:40px;
+    width:40px;
+    background:rgb(28, 28, 28);
+    line-height: 46px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 7px;
+    transition: .2s ease;
+}
+
+div .facebook
+{
+    border:solid 1px white;
+    box-shadow: 1px 1px 3px black, 0 0 28px rgb(34, 0, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+div .twitter
+{
+    border:solid 1px white;
+    box-shadow: 1px 1px 3px  black, 0 0 25px rgb(0, 145, 255), 0 0 5px rgb(255, 255, 255);
+}
+
+div .instagram
+{
+    border:solid 1px white;
+    box-shadow: 1px 1px 3px  black, 0 0 25px rgb(254, 146, 14), 1px 1px 5px #ffffff;
+}
+
+div .instagram:hover
+{
+    background-color:rgb(254, 146, 14);
+}
+
+div .youtube
+{
+    border:solid 1px white;
+    box-shadow: 1px 1px 3px  black, 0 0 25px rgb(255, 0, 0), 1px 1px 5px rgb(255, 255, 255);
+}
+
+.center .content .contact-icon
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 47px;
+    margin: 3px;
+    text-align: center;
+    background:rgb(28, 28, 28);
+    border-radius: 50%;
+}
+
+.center .content .contact-icon:hover
+{
+    box-shadow:1px 1px 3px  black, 0 0 25px rgb(255, 0, 191), 1px 1px 4px rgb(255, 255, 255) ;
+    transition: 0.4s;
+}
+
+
+
+.bottom center
+{
+    padding:4px;
+    font-size: 0.9300em;
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+h3:after
+{
+    
+    content: '';
+    display: block;
+    border-bottom: 2px solid #ff00ae;
+    margin-bottom: -2px;
+    max-width: 90px;
+}
+
+h3
+{
+    border-bottom: 2px solid #7e7e7e;
+}
+
+div .content
+{
+    margin:5px;
+}
+
+iframe
+{
+    margin: 5px 0 0 0;
+}
+
+@media screen and (max-width:775px)
+{
+    footer
+    {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .main-content
+    {
+        float:wrap;
+        flex-direction: column;
+    }
+
+    .main-content .section
+    {
+        margin:5px 0;
+    }
+}
+
+/*Signup form*/
+
+.signup
+{
+    border-radius: 5px;
+    background:url(signup.jpg);
+    padding: 20px;
+    width:458px;
+    margin: auto;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana;
+    margin-top:60px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.signup h1
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 0px 10px #ff00b7;
+
+}
+
+.signup input
+{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+    font-size: 18px;
+    background:black;
+    color: white;
+}
+
+.signup .gender
+{
+    margin-top:-15px;
+    margin-bottom:-15px ;
+}
+
+.signup .gender label
+{
+    color: #8e8e8e;
+    padding: 10px;
+}
+
+.signup .policycheck
+{
+    padding: 8px;
+
+}
+
+.signup input[type=submit]
+{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border:1px solid rgb(255, 0, 191);
+}
+
+.signup a
+{
+    color: rgb(0, 145, 255);
+    text-decoration:none;
+}
+
+.signup a:hover
+{
+    text-shadow: 0px 0px 10px #ffffff;
+    color: rgb(126, 214, 255);
+}
+
+#fname,#lname,#password,#retype_password,#mobile,#city,#zip,#cvv,#expiry-date
+{
+    width: 49%;
+}
+
+input[type=text]
+{
+    width: 49%;
+}
+
+input[type=date]
+{
+    width: 49%;
+    padding: 9px 20px;
+}
+
+#login-password,#email,#card-name,#card-number,#address
+{
+    width: 100%;
+}
+
+option
+{
+    color: white;
+    background: rgb(255, 20, 255);
+}
+
+form hr
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+form input:hover,select:hover,textarea:hover
+{
+    filter:drop-shadow(0 0 5px #ff00ea);
+}
+
+option 
+{
+    color: #8e8e8e;
+}
+
+body .categories
+{
+    margin-top:24px ;
+    margin-bottom:24px ;
+}
+
+.categories a img
+{
+    padding: 15px;
+}
+
+.categories a img:hover
+{
+    transition: ease 0.1s;
+    width:57%;
+    filter:drop-shadow(0 0 13px #ff00ff);
+}
+
+/*About us page*/
+.aboutus h1
+{
+    margin-top: 20px;
+    text-align: center;
+    text-shadow:0px 1px 10px #ff00ae;
+}
+
+.aboutus p
+{
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding:6px 30px 10px 30px;
+}
+
+.aboutus
+{
+    padding-bottom: 30px;
+}
+
+p .paragraph
+{
+    padding:10px 40px 30px 40px;
+}
+
+.aboutus-text
+{
+    width: 70%;
+    font-size: 20px;
+    text-shadow:0px 1px 10px #8c8c8c;
+}
+
+
+/*Contact Us Page*/
+#name
+{
+    width: 100%;
+}
+
+textarea
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+    font-size: 18px;
+    background:black;
+    color: white;
+    font-family: Verdana;
+}
+
+/*Admin Panel*/
+.admin-h1
+{
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 0px 0px 20px #2200ff;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+#select-id
+{
+    color: yellow;
+}
+
+
+/*-------------------------------------------------------------*/
+.body-image
+{
+    background-image: url('bodyimage.jpg');
+    background-size:100% ;
+    background-repeat: repeat-y;
+}
+
+/*-------------------------------------------------------------*/
+.service
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.service-container
+{
+    width:90%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin:0 auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:40px;
+    padding:20px;
+}
+
+.service-box
+{
+    background-color: black;
+    color: white;
+    position: relative;
+    padding:23px;
+    text-align: left;
+    border-radius:15px;
+    box-shadow: 0 0px 15px white;
+    overflow: hidden;
+}
+
+.service-box.sb1::before
+{
+    content: '';
+    position: absolute;
+    background: linear-gradient(50deg,#000,rgb(0, 217, 255),#000);
+    top: 0;
+    left: -125%;
+    width: 80%;
+    height: 100%;
+    transform: skew(20deg);
+    opacity: 0.2;
+    transition: ease-in-out .4s;
+}
+
+.service-box.sb2::before
+{
+    content: '';
+    position: absolute;
+    background: linear-gradient(50deg,#000,rgb(255, 138, 222),#000);
+    top: 0;
+    left: -125%;
+    width: 80%;
+    height: 100%;
+    transform: skew(20deg);
+    opacity: 0.2;
+    transition: ease-in-out .4s;
+}
+
+.service-box.sb3::before
+{
+    content: '';
+    position: absolute;
+    background: linear-gradient(50deg,#000,rgb(0, 255, 208),#000);
+    top: 0;
+    left: -125%;
+    width: 80%;
+    height: 100%;
+    transform: skew(20deg);
+    opacity: 0.2;
+    transition: ease-in-out .4s;
+}
+
+.service-box:hover::before
+{
+    left: 120%;
+}
+
+.service-box h2
+{
+    font-family:'Poppins',Helvetica,sans-serif;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+
+.service-box p
+{
+    font-family:'Poppins',Helvetica,sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    margin-bottom: 20px;
+}
+
+.service-box a
+{
+    text-decoration: none;
+    text-shadow: 0px 0px 19px #ffffff;
+    color: rgb(126, 214, 255);
+    text-align: left;
+
+}
+
+.service-box h2
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.booknow
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.service-box:hover img,.service-box:hover h2,.service-box:hover p
+{
+    transform: translateY(-0.5em);
+}
+

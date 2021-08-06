@@ -1,0 +1,46 @@
+.faq
+{
+    width:60%;
+    margin: auto;
+    border: 1.5px solid rgba(206, 206, 206, 0.659);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+hr.faq-hr
+ {
+    width: 100%;
+    border: 1px solid rgb(58, 58, 58);
+ }
+
+h2.question
+{
+    font-family: Arial;
+    padding: 7px;
+    color: #ff004cf3;
+    text-shadow: 0 1px 2px black;
+}
+
+p.answer
+{
+    padding: 10px;
+    font-size: 21px;
+    color: rgb(142, 142, 142);
+}
+
+p.faq-heading
+{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px #ff00ae;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.faq-heading-hr
+{
+    
+    width:25%;
+    border: 1px solid rgb(58, 58, 58);
+}

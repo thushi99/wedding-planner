@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
+.admin-nav ul li a:hover
+{
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(69, 2, 255), 0 0 10px rgb(44, 2, 255);
+    font-size: 20px;
+}
+
+th
+{
+    padding: 12px;
+    font-size: 19px;
+    background-color: rgba(0, 51, 255, 0.187);
+    text-shadow: 0px 0px 12px #ffffff;
+}
+
+td
+{
+    padding: 7px;
+}
+
+.btn
+{
+    width: 25%;
+    font-size: 17px;
+}
+
+.table
+{
+    padding-bottom: 30px;
+}
+
+.admin-heading
+{
+    margin-left: 285px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
+    text-shadow:0 0 20px rgb(254, 254, 255);
+    -webkit-text-stroke-width: 0.001px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color:#0d00ff;
+}

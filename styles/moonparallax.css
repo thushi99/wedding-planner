@@ -1,0 +1,76 @@
+@font-face
+{
+    font-family: 'Under The Snow Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Under The Snow Regular'), url('Under The Snow.woff') format('woff');
+}
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+body
+{
+    
+    min-height: 1500px;
+}
+
+.section-moon-parallax
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-moon-parallax::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#000000,transparent);
+    z-index: 10000;
+}
+
+.section-moon-parallax::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: #0a2a43;
+    mix-blend-mode: color;
+}
+
+.section-moon-parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#text
+{
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 0 5px 15px black;
+}
+
+#road
+{
+    z-index: 2;
+}

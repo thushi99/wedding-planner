@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap";
+
+.venues
+{
+    width: 900px;
+    margin-top: 100px;
+    margin:auto;
+    display: flex;
+}
+
+.product
+{
+    box-shadow:0px 0px 6px #ffffff;
+    transition: 0.4s;
+    width: 300px;
+    background: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: sans-serif;
+    float:inline;
+    margin:14px;
+    margin-top: 14px;
+    border-radius: 3px;
+}
+
+.product p
+{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow:0 1px 14px rgb(255, 255, 255);
+    padding: 10px;
+
+}
+
+.venues .product ul
+{
+    list-style: none;
+    padding: 10px;
+}
+
+.venues .product button
+{
+    width: 27%;
+    border: none;
+    cursor: pointer;
+    border:1px solid rgb(255, 0, 191);
+    background: none;
+    color: white;
+    height: 30px;
+    margin-bottom: 7px;
+}
+
+.venues .product button:hover
+{
+    box-shadow:0 0 12px #ff00ea;
+}
+
+.venues-heading h1
+{
+    margin-top: 20px;
+    text-align: center;
+    text-shadow:0px 1px 10px #ff00ae;
+    font-size: 50px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.venues h2
+{
+    text-shadow:0px 0px 3px #ff00ae;
+}
+
+.product hr
+{
+    filter: drop-shadow(0px 1px 2px #ff00ae);
+}
+
+/*Date Select*/
+.event-date input[type=date]
+{
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.event-date input[type=text]
+{
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 13px;
+}
+
+
+
+#event-date,#customer-email
+{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+    font-size: 18px;
+    font-family: 'Sansita Swashed', cursive;
+    width: 75%;
+    text-align: center;
+}
+
+#event-date:hover
+{
+    filter:drop-shadow(0 0 5px #1500ff);
+}
+
+.event-date h1
+{
+    text-align: center;
+    text-shadow:0px 1px 15px #1500ff;
+    padding-bottom: 10px;
+    font-family: 'Sansita Swashed', cursive;
+}
